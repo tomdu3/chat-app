@@ -1,3 +1,4 @@
+import { ColorModeButton } from "@/components/ui/color-mode";
 import Image from "next/image";
 import { Button, HStack } from "@chakra-ui/react"
 
@@ -8,6 +9,7 @@ export default function Home() {
         <HStack>
           <Button>Click me</Button>
           <Button>Click me</Button>
+          <ColorModeButton />
         </HStack>
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
