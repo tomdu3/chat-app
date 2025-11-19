@@ -7,17 +7,17 @@ import { LuSend } from "react-icons/lu";
 export function Chat() {
   return (
     <Flex h="100vh">
-      <Stack w="20%" bg="gray.900" p={4} gap={4} alignItems="flex-start" direction="column">
-        <Text fontSize="xl" fontWeight="bold">
+      <Stack w="20%" bg={{ base: 'gray.100', _dark: 'gray.900' }} p={4} gap={4} alignItems="flex-start" direction="column">
+        <Text fontSize="xl" fontWeight="bold" color="fg">
           Chat Rooms
         </Text>
+        <ColorModeButton />
         <Stack gap={2} alignItems="flex-start" direction="column">
-          <Text># general</Text>
-          <Text># random</Text>
-          <Text># tech</Text>
+          <Text color="fg"># general</Text>
+          <Text color="fg"># random</Text>
+          <Text color="fg"># tech</Text>
         </Stack>
         <Box flex="1" />
-        <ColorModeButton />
       </Stack>
       <Flex flex="1" direction="column">
         <Stack flex="1" p={4} gap={4} alignItems="flex-start" direction="column">
@@ -26,16 +26,16 @@ export function Chat() {
               <Avatar.Fallback>U1</Avatar.Fallback>
             </Avatar.Root>
             <Stack alignItems="flex-start" gap={1} direction="column">
-              <Text fontWeight="bold">User 1</Text>
-              <Text bg="gray.700" p={2} borderRadius="md">
+              <Text fontWeight="bold" color="fg">User 1</Text>
+              <Text bg={{ base: 'gray.200', _dark: 'gray.700' }} p={2} borderRadius="md" color="fg">
                 Hello!
               </Text>
             </Stack>
           </Stack>
           <Stack alignSelf="flex-end" direction="row">
             <Stack alignItems="flex-end" gap={1} direction="column">
-              <Text fontWeight="bold">You</Text>
-              <Text bg="blue.500" p={2} borderRadius="md">
+              <Text fontWeight="bold" color="fg">You</Text>
+              <Text bg={{ base: 'blue.200', _dark: 'blue.500' }} p={2} borderRadius="md" color="fg">
                 Hi there!
               </Text>
             </Stack>
