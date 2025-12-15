@@ -26,6 +26,12 @@ For Database we use Convex. More info can be found [here](https://convex.dev/).
 
 In the development mode, the database needs to be run with `npx convex dev` and is synchronized with the Next.js development server and convex server.
 
+## Authentication and Authorization
+
+For Authentication and Authorization we use Clerk. More info can be found [here](https://clerk.com/).
+
+In the development mode, Clerk needs to be run with `npx clerk dev` and is synchronized with the Next.js development server.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
