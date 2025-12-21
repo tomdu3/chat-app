@@ -1,23 +1,20 @@
 "use client";
-import { Button } from "@/components/ui/button";
 import { AuthLoading, Authenticated, Unauthenticated } from "convex/react";
-import { SignInButton, UserButton } from "@clerk/nextjs";
+import { RedirectToSignIn, UserButton } from "@clerk/nextjs";
 
-import { useState } from "react";
-
-function CustomGoogleButton() {
-  return (
-    <SignInButton>
-      <Button>Sign in with Google</Button>
-    </SignInButton>
-  );
-}
+// function CustomGoogleButton() {
+//   return (
+//     <SignInButton>
+//       <Button>Sign in with Google</Button>
+//     </SignInButton>
+//   );
+// }
 
 export default function Home() {
   return (
     <main>
       <Unauthenticated>
-        <CustomGoogleButton />
+        <RedirectToSignIn />
       </Unauthenticated>
       <Authenticated>
         <UserButton />
