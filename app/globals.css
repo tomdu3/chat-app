@@ -98,11 +98,17 @@
   --chart-5: hsl(340 75% 55%);
 }
 
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
 
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
